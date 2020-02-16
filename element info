@@ -1,0 +1,20 @@
+ data-uia="watch-credits-seamless-button"
+
+ "click" on this button.
+ Make this button and the second button be not displayed.
+
+ this would be the feature set for version 1.0.0
+
+
+ 2.0.0 would feature the following:
+
+ Bind a hotkey or hotkey combination to activate or deactivate the play credits behaviour of the plugin.
+ make it so that a black box with white text appears (simple pop up with style="top: 250px;") to send the user the appropriate message
+ 
+ message 1:
+            Automatic credits playback activated
+
+message 2:
+            Automatic credits playback deactivated
+
+post on reddit post when done with inital development and git repo has been put up.
