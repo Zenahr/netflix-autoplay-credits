@@ -2,15 +2,15 @@
     "name": "Netflix Credits Autoplay",
     "version": "1.0.0",
     "description": "Build an Extension!",
-    "permissions": ["storage", "declarativeContent", "activeTab", "http://*.netflix.com/*"],
+    "permissions": ["storage", "declarativeContent", "activeTab", "tabs", "webNavigation", "*://*.netflix.com/watch/*"],
     "background": {
-      "scripts": ["background.js", "credits_controller.js"],
-      "persistent": false
+      "scripts": ["background.js"],
+      "persistent": true
     },
     "content_scripts": [
     {
-        "matches": ["<all_urls>"],
-        "js": ["/credits_controller.js"]
+        "matches": ["*://*.netflix.com/watch/*"],
+        "js": ["credits_controller.js"]
     }
 ],
     "options_page": "options.html",
